@@ -26,7 +26,7 @@ const ActionButtons = ({ openCloseChat, smallFeedEl, largeFeedEl }) => {
                 clearTimeout(timer);
                 setTimer();
             }
-        });
+        },);
 
         return () => {
             window.removeEventListener('mousemove', () => {
@@ -49,7 +49,7 @@ const ActionButtons = ({ openCloseChat, smallFeedEl, largeFeedEl }) => {
     return (
         <div id="menu-buttons" ref={menuButtons} className="row">
             <div className="left col-2">
-                <AudioButton />
+                <AudioButton smallFeedEl={smallFeedEl} />
                 <VideoButton smallFeedEl={smallFeedEl} />
             </div>
             <div className="col-8 text-center">
@@ -74,7 +74,12 @@ const ActionButtons = ({ openCloseChat, smallFeedEl, largeFeedEl }) => {
                 </div>
             </div>
             <div className="center justify-center text-end col-2">
-                <HangupButton />
+                <HangupButton
+                    smallFeedEl = {smallFeedEl}
+                    largeFeedEl={largeFeedEl}
+                
+                
+                 />
             </div>
         </div>
     );

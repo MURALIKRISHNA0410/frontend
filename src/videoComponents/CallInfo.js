@@ -12,7 +12,7 @@ const CallInfo = ({apptInfo})=>{
         },5000)
         //clean up function when the component unmoubts
         return () => {
-            console.log("Clearing")
+            //console.log("Clearing")
           clearInterval(timeInterval);
         };
       }, []);

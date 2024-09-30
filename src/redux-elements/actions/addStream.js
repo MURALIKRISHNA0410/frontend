@@ -1,10 +1,11 @@
 // src/redux-elements/actions/addStream.js
-const addStream = (who, stream, peerConnection) => {
+export default(who, stream, peerConnection) => {
+  console.log("in Add Stream Method")
     return {
       type: "ADD_STREAM",
       payload: { who, stream, peerConnection }
     };
   };
   
-  export default addStream;
+  
   

@@ -7,7 +7,7 @@ import {Provider} from 'react-redux';//get the Provider Component to wrap around
 import rootReducer from './redux-elements/reducers/rootReducer';
 const theStore=createStore(rootReducer);
 
-console.log('Store created successfully:', theStore.getState()); // Log the store
+//console.log('Store created successfully:', theStore.getState()); // Log the store
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
